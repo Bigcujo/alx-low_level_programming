@@ -12,8 +12,10 @@ int main(void)
 	{
 		putchar('0' + a);
 		if (a < 9)
+		{
 		putchar(',');
 		putchar(' ');
+		}
 	}
 	return (0);
 }
