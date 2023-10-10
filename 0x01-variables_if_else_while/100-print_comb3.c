@@ -14,9 +14,12 @@ for (h = 0; h < 10; h++)
 	for (l = h + 1; l < 10; l++)
 	{
 		putchar('0' + h);
-	       putchar('0' + l);
-	       putchar(',');
-	       putchar(' ');
+		putchar('0' + l);
+	if (h != 8 || l != 9)
+	{
+	putchar(',');
+	putchar(' ');
+	}
 	}
 }
 putchar('\n');
