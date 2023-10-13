@@ -1,4 +1,4 @@
-#include "toolz.h"
+#include "main.h"
 /**
  * _isupper - this functions checks for upper case character
  * @c: this represents the character
