@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	long int n;
+	long int d;
 	long int max;
 	long int i;
 
@@ -20,7 +20,7 @@ int main(void)
 	max = 2;
 	d /= 2;
 	}
-	for (i = 3; i <= sqrt(n); i = i + 2)
+	for (i = 3; i <= sqrt(d); i = i + 2)
 	{
 	while (d % i == 0)
 	{
