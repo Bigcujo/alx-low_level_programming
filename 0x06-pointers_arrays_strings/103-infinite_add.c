@@ -20,7 +20,7 @@ void rev_string(char *n)
 
 	for (j = 0; j < d; j++, d--)
 	{
-		temp = *(n + j);
+		temps = *(n + j);
 		*(n + j) = *(n + d);
 		*(n + d) = temps;
 	}
