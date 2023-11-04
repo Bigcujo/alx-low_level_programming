@@ -6,6 +6,6 @@ void positive_or_negative(int num) {
     } else if (num < 0) {
         printf("%d is negative.\n", num);
     } else {
-        printf("%d is zero.\n", num);
+        printf("%d is zero\n", num);
     }
 }
