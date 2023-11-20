@@ -7,7 +7,7 @@
  * raised to.
  * Return: if @b is lower than 0 it will return -1.
  */
-int _pow_recursion(int a, int b);
+int _pow_recursion(int a, int b)
 {
 	if (b < 0)
 	{
