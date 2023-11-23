@@ -9,17 +9,15 @@
 char *create_array(unsigned int size, char c)
 {
 	char *string;
-	unsigned int count = 0;
 
 	string = (char *)malloc(sizeof(char) * size);
 	if (size == 0 || string == NULL)
 	{
 		return (NULL);
 	}
-	while (count < size)
+	for( unsigned int count = 0; count < size; count++)
 	{
 		string[count] = c;
-		string++;
 	}
 	return (string);
 }
