@@ -10,8 +10,9 @@ char *create_array(unsigned int size, char c)
 {
 	char *string;
 	unsigned int count;
+
 	string = malloc(sizeof(char) * size);
-	
+
 	if (size == 0 || string == NULL)
 	{
 	return (NULL);
