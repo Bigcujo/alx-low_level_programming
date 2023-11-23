@@ -6,21 +6,21 @@
  * @c:this will take the charater value we want in the array
  * Return: this will return a charater.
  */
-char *create_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c) 
 {
-	if (size == 0)
+	if (size == 0) 
 	{
-		return (NULL);
+		return NULL;
 	}
 	char *string = (char *)malloc(sizeof(char) * size);
 
-	if (string == NULL)
+	if (string == NULL) 
 	{
-	return (NULL);
+	return NULL;
 	}
-	for (unsigned int count = 0; count < size; count++)
+	for (unsigned int count = 0; count < size; count++) 
 	{
 	string[count] = c;
 	}
-	return (string);
+	return string;
 }
