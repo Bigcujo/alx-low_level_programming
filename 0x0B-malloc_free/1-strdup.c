@@ -6,28 +6,34 @@
  * @str: string to be used in the string
  * Return: 0
  */
+#include <stdlib.h>
+
 char *_strdup(char *str)
 {
-	char *arr;
-	int i, r = 0;
-
 	if (str == NULL)
 	{
 	return (NULL);
 	}
 
-	while (str[i] != '\0')
+	int length = 0;
+
+	while (str[length] != '\0')
 	{
-	i++;
-	arr = malloc(sizeof(char) * (i + 1));
+	length++;
 	}
+
+	char *arr = malloc(sizeof(char) * (length + 1));
+
 	if (arr == NULL)
 	{
 	return (NULL);
 	}
-	for (r = 0; str[r]; r++)
+
+	for (int i = 0; i <= length; i++)
 	{
-	arr[r] = str[r];
+	arr[i] = str[i];
 	}
+
 	return (arr);
 }
+
