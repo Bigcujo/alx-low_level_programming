@@ -1,6 +1,6 @@
 #include "function_pointers.h"
 /**
- * int_index - return index place if comparison meets the if statement 
+ * int_index - return index place if comparison meets the if statement
  * @array: array to be used
  * @size: size of the array
  * @cmp: poointer to be uesed for comparison
@@ -12,18 +12,18 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	if (array == NULL || size <= 0 || cmp == NULL)
 	{
-	return(-1);
+	return (-1);
 	}
 	else
 	{
-	for (a= 0; a < size; a++)
+	for (a = 0; a < size; a++)
 	{
-	if(cmp(array[a]))
+	if (cmp(array[a]))
 	{
-	return(a);
+	return (a);
 	}
 
 	}
-	return(-1);
+	return (-1);
 	}
 }
